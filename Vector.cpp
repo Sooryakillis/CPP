@@ -20,7 +20,7 @@ using namespace std;
         cout<<*it<<" ";
     }
     return 0;
-}*/
+}*/  
 /*
 int main()
 {
@@ -72,19 +72,19 @@ int main()
 
 //*******************************************************************************ITERATOR*************************************************************************************//
 
-/*int main()
-{
-    vector<int> v={1,2,3,4,5,6,7,8,9,10};
-    vector<int> :: iterator a;
-    a=v.begin();
+// int main()
+// {
+//     vector<int> v={1,2,3,4,5,6,7,8,9,10};
+//     vector<int> :: iterator a;
+//     a=v.begin();
 
-    while (a !=v.end())
-    {
-        cout<<*a<<" ";
-        a++;
-    }
-    return 0;
-}*/
+//     while (a !=v.end())
+//     {
+//         cout<<*a<<" ";
+//         a++;
+//     }
+//     return 0;
+// }
 
 // ood and even//
 /*int main()
@@ -131,13 +131,33 @@ int main()
 return 0;
 }*/
 
-int main()
-{
-    vector<int> v1={1,2,3,4,5};
-    sort(v1.begin(), v1.end());
-    for (auto n:v1) // range base for loop
-    {
-        cout<<n<<" ";
-    }
-    return 0;
-}
+// int main()
+// {
+//     vector<int> v1={1,2,3,4,5};
+//     sort(v1.begin(), v1.end());
+//     for (auto n:v1) // range base for loop
+//     {
+//         cout<<n<<" ";
+//     }
+//     return 0;
+// }
+
+// int main()
+// {
+
+
+// vector<vector<int>> v;
+// v.push_back({2,3});
+// v.push_back({3,3});
+// v.push_back({1,3,9});
+
+// for(int i = 0; v.size(); i++)
+// {
+//     for (auto it = v[i].begin(); it !=v[i].end(); it++)
+//     {
+//         cout<<*it<<" ";
+//     }
+//     cout<<'\n';
+// }
+// return 0;
+// }
