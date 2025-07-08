@@ -116,7 +116,7 @@ using namespace std;
 // int mody(int* n)
 // {
 //     *n=50;
-//     cout<<"the modify value is n :"<<*n<<'\n'; // if notuse * can print the address of varibale a in main 
+//     cout<<"the modify value is n :"<<*n<<'\n'; // if not use * can print the address of varibale a in main 
 
 // }
 
@@ -411,46 +411,123 @@ using namespace std;
 
 /////////////////////////////////////////////////////////////////////MAx and min array///////////////////////////////////////////////////////////////////
 
-void min(int a[], int size);
-void max(int a[], int size);
+// void min(int a[], int size);
+// void max(int a[], int size);
 
-int main()
-{
-    int arr[]={1,2,3,4,-5,6,7,8,9,10};
-    int size = sizeof(arr)/sizeof(int);
-    min(arr,size);
-     max(arr,size);
-    cout<<"Size of arr :"<<size<<endl;
+// int main()
+// {
+//     int arr[]={1,2,3,4,-5,6,7,8,9,10};
+//     int size = sizeof(arr)/sizeof(int);
+//     min(arr,size);
+//      max(arr,size);
+//     cout<<"Size of arr :"<<size<<endl;
 
 
-}
+// }
 
-void min (int a[], int size)
-{
-    int small = a[0];
-        for (int i=0; i<size; i++)
-    {
-        cout<<a[i]<<" ";
-        if (a[i]<small)
-        {
-            small=a[i];
-        }
-    }
-    cout<<endl<<"min value of array :"<<small<<endl;
+// void min (int a[], int size)
+// {
+//     int small = a[0];
+//         for (int i=0; i<size; i++)
+//     {
+//         cout<<a[i]<<" ";
+//         if (a[i]<small)
+//         {
+//             small=a[i];
+//         }
+//     }
+//     cout<<endl<<"min value of array :"<<small<<endl;
     
-}
+// }
 
-void max (int a[], int size)
-{
-    int small = a[0];
-        for (int i=0; i<size; i++)
-    {
-        //cout<<a[i]<<" ";
-        if (a[i]>small)
-        {
-            small=a[i];
-        }
-    }
-    cout<<"max vale of Array: "<<small<<endl;
+// void max (int a[], int size)
+// {
+//     int small = a[0];
+//         for (int i=0; i<size; i++)
+//     {
+//         //cout<<a[i]<<" ";
+//         if (a[i]>small)
+//         {
+//             small=a[i];
+//         }
+//     }
+//     cout<<"max vale of Array: "<<small<<endl;
     
-}
+// }
+
+/////////////////////////////////////////////////Recursion and Recursive Function ////////////////////////////////////////////////////////////////////////////////
+
+//function  is calling its self
+//***********************1. Factorial
+// int fact(int num)
+// {
+//   if(num==1)
+//   {
+//     return 1;
+//   }
+//   return num*fact(num-1);
+// }
+
+// int main()
+// {
+//   cout<<fact(5)<<endl;
+
+//   return 0;
+// }
+
+//************************2. fibonaci******************************************************************// 
+
+// int fib(int n)
+// {
+//   cout<<" fib value :"<<n<<endl;
+//   if (n<=1)
+//   {
+//     return 1;
+//   }
+//   return fib(n-1)+fib(n-2);
+// }
+
+// int main()
+// {
+//   cout<<fib(5);
+
+//   return 0;
+// }
+
+// int sumofdigit(int num)
+// {
+//   if(num==0)
+//   {
+//     return 0;
+//   }
+//   return (num%10+sumofdigit(num/10));
+// }
+
+// int main()
+// {
+//   cout<<sumofdigit(4321);
+//   return 0;
+
+// }
+
+// int add(int num)
+// {
+//   if(num==1)
+//   {
+//     return 1;
+//   }
+//   return 2*add(num-1);
+// }
+
+// int main()
+// {
+//   int a=0;
+//   int n;
+//   cout<<"enter numer of days :";
+//   cin>>n;
+//   a=add(n);
+//   cout<<a<<endl;
+//   return 0;
+// }
+
+
